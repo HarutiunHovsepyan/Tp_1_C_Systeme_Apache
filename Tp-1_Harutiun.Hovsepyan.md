@@ -37,41 +37,39 @@ rep : La commande `systemctl is-active firewalld` nous permet d’avoir la certi
 ---
 
 ## 4 - Installation du service Apache (La configuration réseau avancé viendra par la suite)
+
 **[4A] Quels sont les trois principaux serveurs WEB disponible sous Linux**
 
-rep :
+rep : Les trois principaux serveurs WEB disponible sous Linux sont Appache, MySql et PHP.
 
 
 **[4B] La commande dnf (ou anciennement yum) permet d’installer les packages.**
 
-rep :
+**- Quelle commande permet de retrouver le nom du package contenant le serveur Apache ?**
+
+rep : La commande `dnf search apache` nous permet de retrouver le nom du package contenant le serveur Apache.
 
 
-**-Quelle commande permet de retrouver le nom du package contenant le serveur Apache ?**
+**- Quelle commande permet d’installer le serveur Apache ?**
 
-rep :
-
-
-**-Quelle commande permet d’installer le serveur Apache ?**
-
-rep :
+rep : Pour installer le serveur Apache on entre la commande `dnf install httpd`.
 
 
 **[4C] Démarrage du service Apache**
 
-**-Quelle commande permet de démarrer le service Apache ?**
+**- Quelle commande permet de démarrer le service Apache ?**
 
-rep :
+rep : La commande `/sbin/service httpd start` permet de démarrer le service Apache.
 
 
 **[4D] Quelle commande vous permet d’avoir la certitude que le service Apache est fonctionnel ?**
 
-rep :
+rep : La commande `/sbin/service httpd status` permet d’avoir la certitude que le service Apache est fonctionnel.
 
 
 **[4E] Quelles informations essentielles vous sont fournies par cette commande ?**
 
-rep :
+rep : Cette commande nous fournies le PID du httpd, le port sur lequel il est active, son état,  etc...
 
 ---
 
@@ -79,42 +77,41 @@ rep :
 
 **[5A] Ou se trouvent les fichiers de configuration de Apache ?**
 
-rep : 
+rep : Les fichiers de configuration de Apache se trouve dans le répertoire `/etc/httpd`.
 
 
 **[5B] Quelle est la structure de ce répertoire ?**
 
-rep : 
+rep : Dans ce réprertoire se trouve plusieurs répertoires : nous avons des réperoires qui contiennent des fichiers de configurations `.conf`, nous avons un réperoire de modules...
 
 
 **[5C] Ou se trouve le fichier de configuration principal ?**
 
-rep : 
+rep : Le fichier de configuration principal se trouve dans le répertoire `conf` et il se nomme `httpd.conf`.
 
 
 **[5D] Que contient (du point de vue logique) le répertoire conf.d**
 
-rep : 
-
+rep : Selon le `README` du répertoire `conf.d`, ce répertoire contient des fichier `.conf` qui sont des fichiers de configurations. Ce répertoire est utilisé en plus du répertoire `conf.modules.d`.
+ 
 
 **[5E] Que contient le répertoire conf.modules.d**
 
-rep : 
+rep : Le répertoire `conf.modules.d` contient des fichiers de configurations `.conf`. Ces fichiers permettent de cgargers des modules.
 
 
 **[5F] Qu’est-ce qu’un module ?**
 
-rep : 
+rep : Les modules sont des fonctionnalité qui peuvent être modifié selon notre besoin.
 
 
 **[5G] Ou sont-ils stockés ?**
 
-rep : 
+rep : Les modules sont stockés dans le répertoire `modules`
 
 
 **[5H] Ou sont stockés les log de Apache ?**
 
-rep : 
-
+rep : Les `log` de Apache sont stockés dans le répertoire `log`.
 
 
