@@ -1,1 +1,28 @@
+Harutiun
+Hovsepyan
+3ICS
+
+# TP 1 - Service Web
+
+
+## 2 - Désactivation de SELinux
+
+**[2A] A quoi sert ce composant ?**
+
+rep :
+
+
+**[2B] Comment peut on le désactiver momentanément (Il existe au moins 2 moyens)**
+
+rep :
+
+
+**[2C] Comment peut-on le désactiver de façon permanente ?**
+
+rep :
+
+
+**Désactivez SELinux.**
+
+rep :
 
