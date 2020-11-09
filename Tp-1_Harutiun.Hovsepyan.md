@@ -114,4 +114,98 @@ rep : Les modules sont stockés dans le répertoire `modules`
 
 rep : Les `log` de Apache sont stockés dans le répertoire `log`.
 
+---
+
+## 6 - Exploration de la configuration de base (fichier httpd.conf)
+
+**[6A] Qu’est ce que le ‘DOCUMENT ROOT’ ?**
+
+rep :
+
+
+**[6B] Sur quel répertoire pointe-t-il ?**
+
+rep :
+
+
+**[6C] A quoi sert la directive ‘Listen’**
+
+rep :
+
+
+**[6D] A quoi sert la déclaration <Directory>**
+
+rep :
+
+
+**[6E] A quoi servent les directives ‘AllowOverride’ et ‘Require’ ?**
+
+rep :
+
+
+**[6F] A quoi sert le fichier welcome.conf ?**
+
+rep :
+
+
+**[6G] A quoi sert la commande apachectl ?**
+
+rep :
+
+---
+
+## 7 - Tests et Installations complémentaires
+
+**[7A] Exécutez la commande yum install php -y , Quels packages sont installés ?**
+
+rep :
+
+
+**[7B] Le service Apache utilise désormais systématiquement le package ‘php-fpm’ contenant les éléments nécessaires pour l’exécution de pages web dynamiques. Que contient ce package ?**
+
+rep :
+
+
+**[7C] Comment prouver que le serveur Web est désormais capable d’exécuter du PHP ?**
+
+rep :
+
+
+**[7D] Quelle version de php est installée ?**
+
+rep :
+
+
+**[7E] Comment connaître la configuration compléte du serveur web (librairies installées, avec leurs versions et configurations?)**
+
+rep :
+
+
+**[7F] Installez les packages et donnez le rôle des packages suivants :**
+
+**- php-gd**
+
+rep :
+
+
+**- php-mysqlnd**
+
+rep :
+
+
+**- php-pdo**
+
+rep :
+
+
+**- php-mbstring**
+
+rep :
+
+
+
+
+
+
+
 
