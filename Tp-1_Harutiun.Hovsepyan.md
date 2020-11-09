@@ -21,19 +21,20 @@ rep : Pour désactiver temporairement SElinux on peut entrer la commande `setenf
 
 rep : Pour désactiver Selinux de façon permanente, il faut entrer dans le fichier avec la commande `nano /etc/selinux/config`. Il faut ensuite editer `SELINUX=enforcing` en `SELINUX=permissive`.
 
-
+---
 
 ## 3 - Désactivation permanente du pare-feu.
 
-**[3A] Quelle commande vous permet de désactiver de façon permanente le firewall ?**
+**[3A] Quelle commande vous permet de désactiver temporairement le firewall, le temps deprocéder a la configuration de la machine ?**
 
-rep : Pour désactiver de façon permanente le firewall il faut entrer la commande `systemctl disable firewalld`.
+rep : Pour désactiver temporairement le firewall il faut entrer la commande `systemctl stop firewalld`.
 
 
 **[3B] Quelle commande vous permet d’avoir la certitude que le firewall est bien inactif ?**
 
-rep : La commande `systemctl is-enabled firewalld` nous permet d’avoir la certitude que le firewall est bien inactif. Si il nous renvoie `disabled`, alors tout est bon.
+rep : La commande `systemctl is-active firewalld` nous permet d’avoir la certitude que le firewall est bien inactif. Si il nous renvoie `inactive`, alors tout est bon.
 
+---
 
 ## 4 - Installation du service Apache (La configuration réseau avancé viendra par la suite)
 **[4A] Quels sont les trois principaux serveurs WEB disponible sous Linux**
@@ -72,6 +73,7 @@ rep :
 
 rep :
 
+---
 
 ## 5 - Configuration du service Apache
 
