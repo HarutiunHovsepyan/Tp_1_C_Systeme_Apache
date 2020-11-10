@@ -218,8 +218,61 @@ rep : Pour créer un utilisateur et le nommé en `web`, on va entrer la commande
 
 **[8C] Vérifiez que vous pouvez accéder en lecture/écriture a tous les répertoires présents dans le répertoire /home/web en utilisant un client ftp comme FileZilla. Donnez les permissions de /home/web ainsi que celles des dossiers précédemment créés**
 
-rep : 
+rep : Pour utiliser le client ftp FileZilla, nous allons installer FileZilla sur notre PC. Nous allons entrer dans la hôte l'ip de la VM, dans l'identifiant le nom de l'utilisateur `web` et dans le mot de passe le mot de passe de `web`. Nous accedons à notre VM via un client ftp qui est FileZilla. Voici le réultat obtenue :
+
+---image---
+
+Pour vérifier si nous avons accées en lécture/écriture, nous allons ouvrire un dossier et via FileZilla nous allons créer un fihier test.txt. Si sur la VM on voit apparaitre le fichier créeer précedement, cela prouve que nous avons accées en lécture/écriture.
+
+---
+
+## 9 - Configuration réseau
+
+**[9A] Configurer votre carte réseau avec l’IP fixe 172.16.xxx.5/24 et donnez le contenu du fichier.**
+
+rep :
 
 
+**[9B] A quoi sert la commande nmcli**
+
+rep :
 
 
+**[9C] A quoi sert le service NetworkManager**
+
+rep :
+
+
+**[9D] A quoi sert le fichier /etc/resolv.conf ?**
+
+rep :
+
+
+**[9E] Que devez-vous faire comme tests pour vérifier la connectivité de votre VM ?**
+
+rep :
+
+
+**[9F] Votre machine peut-elle joindre www.free.fr ? Quelle commande avez vous utilisez pour le vérifier ?**
+
+rep :
+
+
+**[9G] Votre VM peut-elle être jointe par l’un de vos collègues ? Si non, pourquoi ? Quels tests avez vous effectués ?**
+
+rep :
+
+---
+
+## 10 - IP Virtuelles
+
+● [10A] Ajouter trois adresses IP virtuelles :
+- 172.16.xxx.6/16 permettant de contacter le site web www.campagne.sys
+- 172.16.xxx.10/16 permettant de joindre www.montagne.sys et www.glacier.sys
+- 172.16.xxx.15/16 permettant de joindre www.sommet.sys
+Donnez le contenu des 3 fichiers de configuration.
+● [10B] Comment prouver que votre configuration est fonctionnelle ?
+
+---
+
+## 11 - Configuration du premier serveur virtuel : serveur virtuel par IP
