@@ -120,37 +120,37 @@ rep : Les `log` de Apache sont stockés dans le répertoire `log`.
 
 **[6A] Qu’est ce que le ‘DOCUMENT ROOT’ ?**
 
-rep :
+rep : Le `DocumentRoot` est la racine principale de l'arborescence des documents visible depuis Internet.
 
 
 **[6B] Sur quel répertoire pointe-t-il ?**
 
-rep :
+rep : Le `DocumentRoot` pointe sur le répertoire `var/www/html`.
 
 
 **[6C] A quoi sert la directive ‘Listen’**
 
-rep :
+rep : La directive `Listen` permet d'indiquer à httpd les adresses IP et ports sur lequelle il doit se mettre à l'écoute. Par défaut le serveur répond aux requêtes en provenance de toutes les interfaces réseau.
 
 
 **[6D] A quoi sert la déclaration <Directory>**
 
-rep :
+rep : La déclaration `<Directory>` permet de regrouper un ensemble de directives qui ne s'appliquent qu'au répertoire précisé, à ses sous-répertoires et aux fichiers situés dans ces sous-répertoires.
 
 
 **[6E] A quoi servent les directives ‘AllowOverride’ et ‘Require’ ?**
 
-rep :
+rep : La directive `AllowOverride` permet de controlé les directives autorisées dans les fichiers `.htaccess`. La directive `Require` vérifie si un utilisateur authentifié a une autorisation d'accès accordée par un fournisseur d'autorisation.
 
 
 **[6F] A quoi sert le fichier welcome.conf ?**
 
-rep :
+rep : Le fichier `welcome.conf` est la page de bienvenue par défault si il n'y a pas de racine URL `index` par défault.
 
 
 **[6G] A quoi sert la commande apachectl ?**
 
-rep :
+rep : La commande `apachectl` permet, entre autre, controler l'état de httpd en donnant en arguement les mots suivant `start`, `restart` et `stop`.
 
 ---
 
@@ -158,53 +158,67 @@ rep :
 
 **[7A] Exécutez la commande yum install php -y , Quels packages sont installés ?**
 
-rep :
+rep : En exécutant la commande `yum install php -y` nous installons les packages `php` comme `php-fpm`, `php-common`, `php-cli`.
 
 
 **[7B] Le service Apache utilise désormais systématiquement le package ‘php-fpm’ contenant les éléments nécessaires pour l’exécution de pages web dynamiques. Que contient ce package ?**
 
-rep :
+rep : Le package `php-fpm` contient les éléments nécessaires pour l’exécution de pages web dynamiques avec le service Apache.
 
 
 **[7C] Comment prouver que le serveur Web est désormais capable d’exécuter du PHP ?**
 
-rep :
+rep : 
 
 
 **[7D] Quelle version de php est installée ?**
 
-rep :
+rep : Pour connaitre la version de php installée, on entre la commande `php -v` ce qui nous donne `PHP 7.2.24`.
 
 
 **[7E] Comment connaître la configuration compléte du serveur web (librairies installées, avec leurs versions et configurations?)**
 
-rep :
+rep : 
 
 
 **[7F] Installez les packages et donnez le rôle des packages suivants :**
 
 **- php-gd**
 
-rep :
+rep : Le package `php-gd` permet de manipuler des images dynamiquement avec php.
 
 
 **- php-mysqlnd**
 
-rep :
+rep : Le package `php-mysqlnd` est un driver de langage de base de donnée.
 
 
 **- php-pdo**
 
-rep :
+rep : Le package `php-pdo` permet de manipuler des bases de données en orienté objet avec php.
 
 
 **- php-mbstring**
 
-rep :
+rep : Le package `php-mbstring` est une extension de php.
+
+---
+
+## 8 - Configuration avancée
+
+**[8A] Installez le service vsftp, et bien sûr, vérifiez qu’il est opérationnel. Qu’avez vous fait comme commande ?**
+
+rep : Pour installer service vsftp on entre la commande `yum install -y vsftpd`. Pour vérifier si elle est bien opérationnel on entre la commande `systemctl status vsftpd`. Si elle n'est pas activé, on entree la commande `systemctl start vsftpd`.
 
 
+**[8B] Créez un compte utilisateur nommé ‘web’. Le répertoire de travail de l’utilisateur ‘web’ contiendra les dossiers hébergeant les différents sites web gérés par l’utilisateur ‘web’ :**
+
+rep : Pour créer un utilisateur et le nommé en `web`, on va entrer la commande `useradd web`. On va lui attribuer un mot de passe avec la commande `passwd web`. Nous allons maintenant créer les répertoires demandée, pour ce faire nous allons utilier la commande `mkdir` suivit du nom de dossier que nous voullons créer.
 
 
+**[8C] Vérifiez que vous pouvez accéder en lecture/écriture a tous les répertoires présents dans le répertoire /home/web en utilisant un client ftp comme FileZilla. Donnez les permissions de /home/web ainsi que celles des dossiers précédemment créés**
+
+rep : 
 
 
 
