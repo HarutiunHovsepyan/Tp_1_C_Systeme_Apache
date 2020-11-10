@@ -226,50 +226,74 @@ Pour vérifier si nous avons accées en lécture/écriture, nous allons ouvrire 
 
 ## 9 - Configuration réseau
 
-**[9A] Configurer votre carte réseau avec l’IP fixe 172.16.xxx.5/24 et donnez le contenu du fichier.**
+**[9A] Configurer votre carte réseau avec l’IP fixe 192.168.80.5/24 et donnez le contenu du fichier.**
 
-rep :
+rep : Voici le fichier configurer afin de configurer la carte réseau : 
+
+
 
 
 **[9B] A quoi sert la commande nmcli**
 
-rep :
+rep : La commande `nmcli` permet de faire les manipulations précedent en ligne de commande.
 
 
 **[9C] A quoi sert le service NetworkManager**
 
-rep :
+rep : Le service `NetworkManager` est un outil de gestion de réseau. Il permet entre autre de configurer et contrôler dynamiquement les appareils du réseau, la prise en charge d'une configuration, d'une gestion plus aisées...
 
 
 **[9D] A quoi sert le fichier /etc/resolv.conf ?**
 
-rep :
+rep : Le fichier `/etc/resolv.conf` est générer par le service `NetworkManager`. Il permet de déterminer, entre autre, quels serveurs DNS utiliser pour résoudre un nom de domaine par exemple.
 
 
 **[9E] Que devez-vous faire comme tests pour vérifier la connectivité de votre VM ?**
 
-rep :
+rep : Pour faire la vérification de la connectivité du VM, nous allons ping vers vers l'extérieur.
 
 
 **[9F] Votre machine peut-elle joindre www.free.fr ? Quelle commande avez vous utilisez pour le vérifier ?**
 
-rep :
+rep : Pour joindre www.free.fr nous allons utiliser la commande `ping www.free.fr`. Nous pouvons constater que nos paquets ont bien joint www.free.fr.
 
 
 **[9G] Votre VM peut-elle être jointe par l’un de vos collègues ? Si non, pourquoi ? Quels tests avez vous effectués ?**
 
-rep :
+rep : Je suis en local.
 
 ---
 
 ## 10 - IP Virtuelles
 
-● [10A] Ajouter trois adresses IP virtuelles :
-- 172.16.xxx.6/16 permettant de contacter le site web www.campagne.sys
-- 172.16.xxx.10/16 permettant de joindre www.montagne.sys et www.glacier.sys
-- 172.16.xxx.15/16 permettant de joindre www.sommet.sys
-Donnez le contenu des 3 fichiers de configuration.
-● [10B] Comment prouver que votre configuration est fonctionnelle ?
+**[10A] Ajouter trois adresses IP virtuelles :**
+
+- 192.168.80.6/16 permettant de contacter le site web www.campagne.sys :
+
+rep : Voici le contenue du fichier :
+
+
+
+
+- 192.168.80.10/16 permettant de joindre www.montagne.sys et www.glacier.sys
+
+rep : Voici le contenue du fichier :
+
+
+
+
+- 192.168.80.15/16 permettant de joindre www.sommet.sys
+
+rep : Voici le contenue du fichier :
+
+
+
+
+**[10B] Comment prouver que votre configuration est fonctionnelle ?**
+
+rep : 
+
+
 
 ---
 
