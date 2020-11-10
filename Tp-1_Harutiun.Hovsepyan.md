@@ -218,9 +218,7 @@ rep : Pour créer un utilisateur et le nommé en `web`, on va entrer la commande
 
 **[8C] Vérifiez que vous pouvez accéder en lecture/écriture a tous les répertoires présents dans le répertoire /home/web en utilisant un client ftp comme FileZilla. Donnez les permissions de /home/web ainsi que celles des dossiers précédemment créés**
 
-rep : Pour utiliser le client ftp FileZilla, nous allons installer FileZilla sur notre PC. Nous allons entrer dans la hôte l'ip de la VM, dans l'identifiant le nom de l'utilisateur `web` et dans le mot de passe le mot de passe de `web`. Nous accedons à notre VM via un client ftp qui est FileZilla. Voici le réultat obtenue :
-
----image---
+rep : Pour utiliser le client ftp FileZilla, nous allons installer FileZilla sur notre PC. Nous allons entrer dans la hôte l'ip de la VM, dans l'identifiant le nom de l'utilisateur `web` et dans le mot de passe le mot de passe de `web`. Nous accedons à notre VM via un client ftp qui est FileZilla.
 
 Pour vérifier si nous avons accées en lécture/écriture, nous allons ouvrire un dossier et via FileZilla nous allons créer un fihier test.txt. Si sur la VM on voit apparaitre le fichier créeer précedement, cela prouve que nous avons accées en lécture/écriture.
 
