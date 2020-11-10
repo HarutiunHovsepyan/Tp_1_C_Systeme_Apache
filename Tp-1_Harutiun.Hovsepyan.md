@@ -230,7 +230,7 @@ Pour vérifier si nous avons accées en lécture/écriture, nous allons ouvrire 
 
 rep : Voici le fichier configurer afin de configurer la carte réseau : 
 
-
+![image code](Exercice_9.PNG)
 
 
 **[9B] A quoi sert la commande nmcli**
@@ -260,7 +260,7 @@ rep : Pour joindre www.free.fr nous allons utiliser la commande `ping www.free.f
 
 **[9G] Votre VM peut-elle être jointe par l’un de vos collègues ? Si non, pourquoi ? Quels tests avez vous effectués ?**
 
-rep : Je suis en local.
+rep : Je travail en local.
 
 ---
 
@@ -270,29 +270,28 @@ rep : Je suis en local.
 
 - 192.168.80.6/16 permettant de contacter le site web www.campagne.sys :
 
-rep : Voici le contenue du fichier :
+rep : Voici le contenue du fichier ifcfg-ens33:0:
 
-
+![image code](ip_vir_0.PNG)
 
 
 - 192.168.80.10/16 permettant de joindre www.montagne.sys et www.glacier.sys
 
-rep : Voici le contenue du fichier :
+rep : Voici le contenue du fichier /ifcfg-ens33:1 :
 
-
+![image code](ip_vir_1.PNG)
 
 
 - 192.168.80.15/16 permettant de joindre www.sommet.sys
 
-rep : Voici le contenue du fichier :
+rep : Voici le contenue du fichier /ifcfg-ens33:2 :
 
-
+![image code](ip_vir_2.PNG)
 
 
 **[10B] Comment prouver que votre configuration est fonctionnelle ?**
 
 rep : 
-
 
 
 ---
