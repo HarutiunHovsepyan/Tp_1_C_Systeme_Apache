@@ -297,3 +297,78 @@ rep :
 ---
 
 ## 11 - Configuration du premier serveur virtuel : serveur virtuel par IP
+
+**[11A] Créez le premier serveur web virtuel. La racine (DocumentRoot) de ce serveur web sera bien sûr le répertoire www.campagne.sys. Donnez le nom et le contenu du fichier de configuration.**
+
+rep :
+
+
+**Prouvez que votre serveur virtuel est a l’écoute et joignable depuis une machine présente sur le réseau vmnet8. Quelle est votre démarche ?**
+
+rep :
+
+
+**Testez votre configuration en utilisant votre navigateur (depuis votre Windows ou depuis une autre VM). Pouvez-vous prouver que c’est bien le serveur virtuel que vous venez de configurer qui a répondu ? Comment ?**
+
+rep :
+
+
+**[11D] Votre serveur vous a retourné un message « access denied » ? C’est probablement normal, pourtant vous avez prouvé qu’il était a l’écoute :**
+
+**- A quoi sert la directive « Allow » dans le fichier de configuration.**
+
+rep :
+
+
+**- Quelles sont les permissions sur le répertoire /home/web et /home/web/www.campagne.sys ?**
+
+rep :
+
+
+**- Proposez une solution « propre » pour résoudre le problème.**
+
+rep :
+
+
+**Déployez l’application web phpsysinfo (http://phpsysinfo.github.io/phpsysinfo/) dans le répertoire www.campagne.sys et fournissez une copie d’écran de la page d’accueil de cette application.**
+
+rep :
+
+
+**Testez l’URL http:// 172 .16. xxx .5 Avez vous obtenu une réponse ? Si Oui pourquoi ?**
+
+rep :
+
+---
+
+## 12 - Serveur virtuel par nom
+
+**Créer les deux serveurs webs virtuels répondant pour le domaine www.montagne.sys et www.glacier.sys sur l’IP 172.16.xxx.10 et donnez le contenu du/des fichier·s de configuration.**
+
+rep :
+
+
+**Avez vous vu la note concernant la configuration des DNS ? Donnez-en un résumé**
+
+rep :
+
+
+**Mettez en place une solution permettant de garantir que le serveur virtuel hébergeant www.montagne.sys est bien le bon a répondre et procédez aux tests. Justifiez votre démarche.**
+
+rep :
+
+
+**Testez l’URL http://172.16. xxx .5 . Quel serveur virtuel a répondu ? Est-ce le comportement attendu ? Justifiez votre réponse.**
+
+rep :
+
+
+**Avez vous vu la note intitulée « Le serveur principal disparaît » ? Quelle information essentiel contient-elle ?**
+
+rep :
+
+
+
+---
+
+## 13 - Serveur virtuel, HTTPS et SSL
