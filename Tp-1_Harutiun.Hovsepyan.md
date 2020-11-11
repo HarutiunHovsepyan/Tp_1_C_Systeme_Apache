@@ -301,7 +301,7 @@ rep : On peut pinger depuis un navigateur sur l'un des adresses IP virtuel.
 
 rep : Pour créer un serveur web virtuel, il faut editer le fichier `/etc/httpd/conf/httpd.conf`. On va lui ajouter les lignes suivants :
 
-![image code](exercice_11.PNG)
+![image code](Exercice_11.PNG)
 
 
 **[11B]Prouvez que votre serveur virtuel est a l’écoute et joignable depuis une machine présente sur le réseau vmnet8. Quelle est votre démarche ?**
@@ -354,7 +354,7 @@ rep :
 
 rep : Dans le fichier `/etc/httpd/conf/httpd.conf`, nous allons ajouter les lignes suivants :
 
-![image code](exercice_12.PNG)
+![image code](Exercice_12.PNG)
 
 
 **[12B] Avez vous vu la note concernant la configuration des DNS ? Donnez-en un résumé**
@@ -405,7 +405,7 @@ rep : Nous venons de génerer deux fichiers : `certificat.pem` qui contient le c
 
 rep : Pour mettre en place le serveur virtuel www.sommet.sys, Nous allons dans le fichier `/etc/httpd/conf/httpd.conf`, nous allons ajouter les lignes suivants :
 
-![image code](exercice_13.PNG)
+![image code](Exercice_13.PNG)
 
 
 **[13D] Quel message avez-vous obtenu lors de vos tests avec votre navigateur ? Pourquoi avez vous obtenu ce message ?**
