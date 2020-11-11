@@ -380,5 +380,74 @@ rep : Dans le note intitulée Le serveur disparaît, il est dit que le serveur p
 
 ## 13 - Serveur virtuel, HTTPS et SSL
 
+**[13A] Avez vous vérifié que le module nécessaire a l’utilisation du HTTPS était installé et chargé ? Quel est le nom du module ? qu’avez vous fait pour vérifier qu’il était chargé en mémoire par Apache ?**
+
+rep :
+
+
+**[13B] La commande « openssl req -x509 -nodes -newkey rsa:1024 -keyout serveur.cle -out certificat.pem » permet de générer les fichiers nécessaires pour l’utilisation de l’https.**
+**- A quoi sert l’option « -x509 »**
+
+rep :
+
+
+**- A quoi sert le paramètre « rsa:1024 » de l’option « -newkey » ? Ce paramétre est-il pertinent a l’heure actuelle ?**
+
+rep :
+
+
+**- Quels sont les fichiers générés ? Que contiennent-ils ?**
+
+rep :
+
+
+**[13C] Mettez en place le serveur virtuel www.sommet.sys Il devra répondre sur les ports 80 et 443, et donnez le contenu du fichier de configuration.**
+
+rep :
+
+
+**[13D] Quel message avez-vous obtenu lors de vos tests avec votre navigateur ? Pourquoi avez vous obtenu ce message ?**
+
+rep :
+
+
+**[13E] Connaissez vous le site Let’s Encrypt (https://letsencrypt.org/fr/). Quel est son rôle ? Comment peut-il vous aidez pour le problème précédent ?**
+
+rep :
+
+---
+
+## 14 - Restriction de l’accès utilisateur
+
+**[14A] Quels sont les modes d’authentification possibles ?**
+
+rep :
+
+
+**[14B] Qu’est ce qu’un fournisseur d’accès dans ce contexte ?**
+
+rep :
+
+
+**[14C] Pour le site www.campagne.sys, créer un répertoire « secure » et vérifier que vous pouvez bien accéder au contenu de ce répertoire. Quels tests avez-vous effectués ?**
+
+rep :
+
+
+**[14D] Changer la configuration de ce serveur virtuel pour restreindre l’accès au répertoire « secure ». Vous utiliserez une authentification « basic » avec un « provider file». Donnez le contenu du fichier de configuration.**
+
+rep :
+
+
+**[14E] Créez un utilisateur « Apache » avec les identifiants « leon/123+aze » et vérifiez qu’il a bien accès au répertoire « secure » . La commande htpasswd vous sera nécessaire. Quels tests avez-vous effectués ? Quelles commandes avez-vous utilisées ?**
+
+rep :
+
+
+**[14F] Quelle démarche vous a permis de vérifier que le compte « leon » avec le mot de passe « 123+aze » a bien accès au répertoire « secure » ?**
+
+rep :
+
+
 
 
