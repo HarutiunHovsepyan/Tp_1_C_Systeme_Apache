@@ -382,38 +382,40 @@ rep : Dans le note intitulée Le serveur disparaît, il est dit que le serveur p
 
 **[13A] Avez vous vérifié que le module nécessaire a l’utilisation du HTTPS était installé et chargé ? Quel est le nom du module ? qu’avez vous fait pour vérifier qu’il était chargé en mémoire par Apache ?**
 
-rep :
+rep : Les modules permettants d'utiliser HTTPS sont `mod_ssl` et `openssl`. Il faut les installer si ils ne sont pas présent sur l'OS.
 
 
 **[13B] La commande « openssl req -x509 -nodes -newkey rsa:1024 -keyout serveur.cle -out certificat.pem » permet de générer les fichiers nécessaires pour l’utilisation de l’https.**
 **- A quoi sert l’option « -x509 »**
 
-rep :
+rep : L'option `-x509` est le format standart de clée public.
 
 
 **- A quoi sert le paramètre « rsa:1024 » de l’option « -newkey » ? Ce paramétre est-il pertinent a l’heure actuelle ?**
 
-rep :
+rep : Le paramètre `rsa:1024` permet de générer une clée de 1024 bits. Elle n'est pas pertinent a l’heure actuelle car il existe des clée 2048 bits.
 
 
 **- Quels sont les fichiers générés ? Que contiennent-ils ?**
 
-rep :
+rep : Nous venons de génerer deux fichiers : `certificat.pem` qui contient le certificat et `serveur.cle` qui contient la clée privée.
 
 
 **[13C] Mettez en place le serveur virtuel www.sommet.sys Il devra répondre sur les ports 80 et 443, et donnez le contenu du fichier de configuration.**
 
-rep :
+rep : Pour mettre en place le serveur virtuel www.sommet.sys, Nous allons dans le fichier `/etc/httpd/conf/httpd.conf`, nous allons ajouter les lignes suivants :
+
+![image code](exercice_13.PNG)
 
 
 **[13D] Quel message avez-vous obtenu lors de vos tests avec votre navigateur ? Pourquoi avez vous obtenu ce message ?**
 
-rep :
+rep : 
 
 
 **[13E] Connaissez vous le site Let’s Encrypt (https://letsencrypt.org/fr/). Quel est son rôle ? Comment peut-il vous aidez pour le problème précédent ?**
 
-rep :
+rep : Let’s Encrypt est une autorité de certification gratuite, elle est automatisée et open source. Elle nus donne un certificat pour utiliser le protocole `https`.
 
 ---
 
@@ -421,12 +423,12 @@ rep :
 
 **[14A] Quels sont les modes d’authentification possibles ?**
 
-rep :
+rep : 
 
 
 **[14B] Qu’est ce qu’un fournisseur d’accès dans ce contexte ?**
 
-rep :
+rep : 
 
 
 **[14C] Pour le site www.campagne.sys, créer un répertoire « secure » et vérifier que vous pouvez bien accéder au contenu de ce répertoire. Quels tests avez-vous effectués ?**
