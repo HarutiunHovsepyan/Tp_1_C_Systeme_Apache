@@ -291,8 +291,7 @@ rep : Voici le contenue du fichier /ifcfg-ens33:2 :
 
 **[10B] Comment prouver que votre configuration est fonctionnelle ?**
 
-rep : 
-
+rep : On peut pinger depuis un navigateur sur l'un des adresses IP virtuel.
 
 ---
 
@@ -300,42 +299,44 @@ rep :
 
 **[11A] Créez le premier serveur web virtuel. La racine (DocumentRoot) de ce serveur web sera bien sûr le répertoire www.campagne.sys. Donnez le nom et le contenu du fichier de configuration.**
 
-rep :
+rep : Pour créer un serveur web virtuel, il faut editer le fichier `/etc/httpd/conf/httpd.conf`. On va lui ajouter les lignes suivants :
+
+![image code](exercice_11.PNG)
 
 
-**Prouvez que votre serveur virtuel est a l’écoute et joignable depuis une machine présente sur le réseau vmnet8. Quelle est votre démarche ?**
+**[11B]Prouvez que votre serveur virtuel est a l’écoute et joignable depuis une machine présente sur le réseau vmnet8. Quelle est votre démarche ?**
 
-rep :
+rep : Pour ce faire on peut cloner notre VM et lui attribuer un IP qui est dans le même sous-réseau que l'adresse entrée dans le serveur web virtuel. On va ensuite ping le serveur web virtuel, c'est à dire 192.168.80.6.
 
 
-**Testez votre configuration en utilisant votre navigateur (depuis votre Windows ou depuis une autre VM). Pouvez-vous prouver que c’est bien le serveur virtuel que vous venez de configurer qui a répondu ? Comment ?**
+**[11C]Testez votre configuration en utilisant votre navigateur (depuis votre Windows ou depuis une autre VM). Pouvez-vous prouver que c’est bien le serveur virtuel que vous venez de configurer qui a répondu ? Comment ?**
 
-rep :
+rep : 
 
 
 **[11D] Votre serveur vous a retourné un message « access denied » ? C’est probablement normal, pourtant vous avez prouvé qu’il était a l’écoute :**
 
 **- A quoi sert la directive « Allow » dans le fichier de configuration.**
 
-rep :
+rep : La directive Allow dans le directive de configuration permet de gérer les autorisations de connexion.
 
 
 **- Quelles sont les permissions sur le répertoire /home/web et /home/web/www.campagne.sys ?**
 
-rep :
+rep : Les permissions sur le répertoire `/home/web` sont `rwxrwxw.x` et sur le répertoire `/home/web/www.campagne.sys` sont `rwxrwxw.x`.
 
 
 **- Proposez une solution « propre » pour résoudre le problème.**
 
+rep : 
+
+
+**[11E] Déployez l’application web phpsysinfo (http://phpsysinfo.github.io/phpsysinfo/) dans le répertoire www.campagne.sys et fournissez une copie d’écran de la page d’accueil de cette application.**
+
 rep :
 
 
-**Déployez l’application web phpsysinfo (http://phpsysinfo.github.io/phpsysinfo/) dans le répertoire www.campagne.sys et fournissez une copie d’écran de la page d’accueil de cette application.**
-
-rep :
-
-
-**Testez l’URL http:// 172 .16. xxx .5 Avez vous obtenu une réponse ? Si Oui pourquoi ?**
+**[11F] Testez l’URL http:// 172 .16. xxx .5 Avez vous obtenu une réponse ? Si Oui pourquoi ?**
 
 rep :
 
