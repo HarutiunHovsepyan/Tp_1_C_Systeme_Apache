@@ -168,7 +168,7 @@ rep : Le package `php-fpm` contient les éléments nécessaires pour l’exécut
 
 **[7C] Comment prouver que le serveur Web est désormais capable d’exécuter du PHP ?**
 
-rep : 
+rep : Pour prouver que le serveur Web est désormais capable d’exécuter du PHP, on créer une page au format php et est on l'ouvre avec son navigateur.
 
 
 **[7D] Quelle version de php est installée ?**
@@ -200,7 +200,7 @@ rep : Le package `php-pdo` permet de manipuler des bases de données en orienté
 
 **- php-mbstring**
 
-rep : Le package `php-mbstring` est une extension de php.
+rep : Le package `php-mbstring` est une extension de php permettant de gerer des Strings.
 
 ---
 
@@ -423,33 +423,9 @@ rep : Let’s Encrypt est une autorité de certification gratuite, elle est auto
 
 **[14A] Quels sont les modes d’authentification possibles ?**
 
-rep : 
+rep : Il faut utiliser des compte d'utilisateurs et les configurer dans le fichier `httpd.conf`.
 
 
 **[14B] Qu’est ce qu’un fournisseur d’accès dans ce contexte ?**
 
-rep : 
-
-
-**[14C] Pour le site www.campagne.sys, créer un répertoire « secure » et vérifier que vous pouvez bien accéder au contenu de ce répertoire. Quels tests avez-vous effectués ?**
-
-rep :
-
-
-**[14D] Changer la configuration de ce serveur virtuel pour restreindre l’accès au répertoire « secure ». Vous utiliserez une authentification « basic » avec un « provider file». Donnez le contenu du fichier de configuration.**
-
-rep :
-
-
-**[14E] Créez un utilisateur « Apache » avec les identifiants « leon/123+aze » et vérifiez qu’il a bien accès au répertoire « secure » . La commande htpasswd vous sera nécessaire. Quels tests avez-vous effectués ? Quelles commandes avez-vous utilisées ?**
-
-rep :
-
-
-**[14F] Quelle démarche vous a permis de vérifier que le compte « leon » avec le mot de passe « 123+aze » a bien accès au répertoire « secure » ?**
-
-rep :
-
-
-
-
+rep : Le fournisseur d’accès dans ce contexte sert à définir les règles d'authentification.
