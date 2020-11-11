@@ -328,7 +328,13 @@ rep : Les permissions sur le répertoire `/home/web` sont `rwxrwxw.x` et sur le 
 
 **- Proposez une solution « propre » pour résoudre le problème.**
 
-rep : 
+rep : Dans le fichier `/etc/httpd/conf/httpd.conf`, nous allons ajouter les lignes : 
+
+`Allow from all`
+
+`AllowOverride None`
+
+`Require all granted`
 
 
 **[11E] Déployez l’application web phpsysinfo (http://phpsysinfo.github.io/phpsysinfo/) dans le répertoire www.campagne.sys et fournissez une copie d’écran de la page d’accueil de cette application.**
@@ -344,32 +350,35 @@ rep :
 
 ## 12 - Serveur virtuel par nom
 
-**Créer les deux serveurs webs virtuels répondant pour le domaine www.montagne.sys et www.glacier.sys sur l’IP 172.16.xxx.10 et donnez le contenu du/des fichier·s de configuration.**
+**[12A] Créer les deux serveurs webs virtuels répondant pour le domaine www.montagne.sys et www.glacier.sys sur l’IP 172.16.xxx.10 et donnez le contenu du/des fichier·s de configuration.**
+
+rep : Dans le fichier `/etc/httpd/conf/httpd.conf`, nous allons ajouter les lignes suivants :
+
+![image code](exercice_12.PNG)
+
+
+**[12B] Avez vous vu la note concernant la configuration des DNS ? Donnez-en un résumé**
+
+rep : La configuration de serveurs virtuels sous Apache ne provoque pas automatiquement son apparition dans la configuration du DNS. Il faut que les noms soient définis dans le DNS, et qu'ils y soient résolus sur l'adresse IP en question.
+
+
+**[12C] Mettez en place une solution permettant de garantir que le serveur virtuel hébergeant www.montagne.sys est bien le bon a répondre et procédez aux tests. Justifiez votre démarche.**
+
+rep : L'une des solution pour pouvoir différencier www.montagne.sys à www.glacier.sys. Il faut mettre un fichier Index dans le répertoire www.montagne.sys.
+
+
+**[12D] Testez l’URL http://172.16. xxx .5 . Quel serveur virtuel a répondu ? Est-ce le comportement attendu ? Justifiez votre réponse.**
 
 rep :
 
 
-**Avez vous vu la note concernant la configuration des DNS ? Donnez-en un résumé**
+**[12E] Avez vous vu la note intitulée « Le serveur principal disparaît » ? Quelle information essentiel contient-elle ?**
 
-rep :
-
-
-**Mettez en place une solution permettant de garantir que le serveur virtuel hébergeant www.montagne.sys est bien le bon a répondre et procédez aux tests. Justifiez votre démarche.**
-
-rep :
-
-
-**Testez l’URL http://172.16. xxx .5 . Quel serveur virtuel a répondu ? Est-ce le comportement attendu ? Justifiez votre réponse.**
-
-rep :
-
-
-**Avez vous vu la note intitulée « Le serveur principal disparaît » ? Quelle information essentiel contient-elle ?**
-
-rep :
-
-
+rep : Dans le note intitulée Le serveur disparaît, il est dit que le serveur principal ne doit pas être accessible.
 
 ---
 
 ## 13 - Serveur virtuel, HTTPS et SSL
+
+
+
